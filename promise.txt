@@ -1,0 +1,11 @@
+É um objeto JavaScript com a promessa de que algo será realizado (não importa será dará certo ou errado)
+É usado para operações assíncronas
+    - Carregar um arquivo
+    - Leitura de dados de uma API
+
+    4 ESTÁGIOS DE UMA PROMISE
+    Uma promessa poderá ser:
+        - Pending (pendente): Estado inicial, assim que o Objeto da promessa é iniciado (momento de espera);
+        - Fulfilled (realizada): A promessa foi concluída com sucesso;
+        - Rejected (rejeitada): A promessa foi rejeitada, houve um erro;
+        - Settled: Seja com sucesso ou com erro, a promessa foi finalmente concluída
