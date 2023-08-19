@@ -25,3 +25,22 @@ ja o .catch() também é uma função que pega o resultado da promise caso ela s
 e por fim o finally é uma função que irá mostrar para o usuário que a promise foi realizada, independente do resultado
 result e erro são funções que recebem como parametro o valor de then e catch e imprime esses valores */
 promessa.then(result => console.log(result)).catch(erro => console.log(erro)).finally(() => console.log('Operação concluída')) /* "execução do assíncronismo 3" */
+
+
+/* 
+Promise.all([
+	new Promise((resolve, reject) => {
+		if(pagamento){
+			return resolve('pagamento aprovado');
+		}
+		return reject('pagamento recusado')
+	}), 
+	
+	new  Promise((resolve, reject) => {
+		if(aceitar){
+			return resolve('pedido aceito');
+		}
+		
+		return reject('pedido negado!');
+	}),
+]).then(result => console.log(result)).catch(erro => console.log(erro)).finally(() => console.log('Operação concluída')) */
